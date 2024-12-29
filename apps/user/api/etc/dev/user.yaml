@@ -1,0 +1,19 @@
+Name: user
+Host: 0.0.0.0
+Port: 8888
+
+UserRpc:
+  Etcd:
+    Hosts:
+      - 192.168.182.130:3379
+    Key: user.rpc
+
+Redisx:
+  Host: 192.168.182.130:16379
+  Type: node
+  Pass: easy-chat
+
+
+JwtAuth:
+  AccessSecret: imooc.com
+#  AccessExpire: 8640000
